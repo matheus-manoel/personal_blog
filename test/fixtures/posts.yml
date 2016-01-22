@@ -1,9 +1,11 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-
-one:
+exemplo:
   title: MyString
-  body: MyText
+  body: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto deleniti autem adipisci aliquid rem nisi doloremque, commodi vel quod eius voluptatum nemo voluptate fugiat magnam, optio est suscipit fuga amet!
 
-two:
-  title: MyString
-  body: MyText
+exemplo1:
+  title: MyString1
+  body: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sapiente rerum eveniet, quis iure praesentium! Possimus eius doloremque amet quod quis reiciendis quas ducimus consequuntur perferendis sed explicabo, quae porro!
+
+exemplo2:
+  title: MyString1
+  body: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias sapiente rerum eveniet, quis iure praesentium! Possimus eius doloremque amet quod quis reiciendis quas ducimus consequuntur perferendis sed explicabo, quae porro!
