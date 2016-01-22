@@ -1,0 +1,623 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import 'normalize';
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+}
+
+.bg-gray {
+  background-color: #ECF0F1;
+}
+
+.container-fluid {
+  padding: 60px 70px;
+}
+
+.section-title {
+  margin-bottom: 30px;
+}
+
+.jumbotron {
+  height: 70%;
+  padding: 30px;
+  margin: 0;
+}
+
+#about {
+  padding-top: 90px;
+  height: 150px;
+}
+
+.jumbotron p {
+  font-size: 30px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.jumbotron .btn {
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-top: -5px;
+  font-size: 30px;
+}
+
+.btn.sharp {
+  border-radius:0;
+}
+
+/* animated blink cursosr */
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* ---------------------- */
+
+/* horizontal line */
+
+hr.style-two {
+    margin-top: -15px;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(127,140,141, 0), rgba(127,140,141, 0.75), rgba(127,140,141, 0));
+}
+
+/* ----------------- */
+
+/* navbar */
+
+.navbar-wrapper {
+  min-height: 50px;
+}
+
+.navbar {
+  background-color: transparent;
+  background: transparent;
+  border-color: transparent;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+
+.navbar-fixed-top {
+  background-color: rgba(236, 240, 241, .8);
+}
+
+.navbar-fixed-top .navbar-nav {
+  padding-right: 15px;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #333333 !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a, .navbar-brand b:hover {
+    color: #BDC3C7 !important;
+    background-color: transparent !important;
+}
+
+/* ---------------- */
+
+/* software developer button */
+
+.btn-software-developer {
+  color: #FFFFFF;
+  background-color: #19B5FE;
+  border-color: #19B5FE;
+}
+
+.btn-software-developer:hover,
+.btn-software-developer:focus,
+.btn-software-developer:active,
+.btn-software-developer.active,
+.open .dropdown-toggle.btn-software-developer {
+  color: #FFFFFF;
+  background-color: #22A7F0;
+  border-color: #19B5FE;
+}
+
+.btn-software-developer:active,
+.btn-software-developer.active,
+.open .dropdown-toggle.btn-software-developer {
+  background-image: none;
+}
+
+.btn-software-developer.disabled,
+.btn-software-developer[disabled],
+fieldset[disabled] .btn-software-developer,
+.btn-software-developer.disabled:hover,
+.btn-software-developer[disabled]:hover,
+fieldset[disabled] .btn-software-developer:hover,
+.btn-software-developer.disabled:focus,
+.btn-software-developer[disabled]:focus,
+fieldset[disabled] .btn-software-developer:focus,
+.btn-software-developer.disabled:active,
+.btn-software-developer[disabled]:active,
+fieldset[disabled] .btn-software-developer:active,
+.btn-software-developer.disabled.active,
+.btn-software-developer[disabled].active,
+fieldset[disabled] .btn-software-developer.active {
+  background-color: #19B5FE;
+  border-color: #19B5FE;
+}
+
+.btn-software-developer .badge {
+  color: #19B5FE;
+  background-color: #FFFFFF;
+}
+
+/*-------------*/
+
+/* problem solver button */
+
+.btn-problem-solver {
+  color: #FFFFFF;
+  background-color: #39D179;
+  border-color: #39D179;
+}
+
+.btn-problem-solver:hover,
+.btn-problem-solver:focus,
+.btn-problem-solver:active,
+.btn-problem-solver.active,
+.open .dropdown-toggle.btn-problem-solver {
+  color: #FFFFFF;
+  background-color: #2CC36B;
+  border-color: #39D179;
+}
+
+.btn-problem-solver:active,
+.btn-problem-solver.active,
+.open .dropdown-toggle.btn-problem-solver {
+  background-image: none;
+}
+
+.btn-problem-solver.disabled,
+.btn-problem-solver[disabled],
+fieldset[disabled] .btn-problem-solver,
+.btn-problem-solver.disabled:hover,
+.btn-problem-solver[disabled]:hover,
+fieldset[disabled] .btn-problem-solver:hover,
+.btn-problem-solver.disabled:focus,
+.btn-problem-solver[disabled]:focus,
+fieldset[disabled] .btn-problem-solver:focus,
+.btn-problem-solver.disabled:active,
+.btn-problem-solver[disabled]:active,
+fieldset[disabled] .btn-problem-solver:active,
+.btn-problem-solver.disabled.active,
+.btn-problem-solver[disabled].active,
+fieldset[disabled] .btn-problem-solver.active {
+  background-color: #39D179;
+  border-color: #39D179;
+}
+
+.btn-problem-solver .badge {
+  color: #39D179;
+  background-color: #FFFFFF;
+}
+
+/*--------------------------*/
+
+/* creative thinker */
+
+.btn-creative-thinker {
+  color: #FFFFFF;
+  background-color: #F9690E;
+  border-color: #F9690E;
+}
+
+.btn-creative-thinker:hover,
+.btn-creative-thinker:focus,
+.btn-creative-thinker:active,
+.btn-creative-thinker.active,
+.open .dropdown-toggle.btn-creative-thinker {
+  color: #FFFFFF;
+  background-color: #F2792E;
+  border-color: #F9690E;
+}
+
+.btn-creative-thinker:active,
+.btn-creative-thinker.active,
+.open .dropdown-toggle.btn-creative-thinker {
+  background-image: none;
+}
+
+.btn-creative-thinker.disabled,
+.btn-creative-thinker[disabled],
+fieldset[disabled] .btn-creative-thinker,
+.btn-creative-thinker.disabled:hover,
+.btn-creative-thinker[disabled]:hover,
+fieldset[disabled] .btn-creative-thinker:hover,
+.btn-creative-thinker.disabled:focus,
+.btn-creative-thinker[disabled]:focus,
+fieldset[disabled] .btn-creative-thinker:focus,
+.btn-creative-thinker.disabled:active,
+.btn-creative-thinker[disabled]:active,
+fieldset[disabled] .btn-creative-thinker:active,
+.btn-creative-thinker.disabled.active,
+.btn-creative-thinker[disabled].active,
+fieldset[disabled] .btn-creative-thinker.active {
+  background-color: #F9690E;
+  border-color: #F9690E;
+}
+
+.btn-creative-thinker .badge {
+  color: #F9690E;
+  background-color: #FFFFFF;
+}
+
+/*---------------------------------*/
+
+/* esports fan button */
+
+.btn-esports-fan {
+  color: #FFFFFF;
+  background-color: #F1C40F;
+  border-color: #F1C40F;
+}
+
+.btn-esports-fan:hover,
+.btn-esports-fan:focus,
+.btn-esports-fan:active,
+.btn-esports-fan.active,
+.open .dropdown-toggle.btn-esports-fan {
+  color: #FFFFFF;
+  background-color: #EDC111;
+  border-color: #F1C40F;
+}
+
+.btn-esports-fan:active,
+.btn-esports-fan.active,
+.open .dropdown-toggle.btn-esports-fan {
+  background-image: none;
+}
+
+.btn-esports-fan.disabled,
+.btn-esports-fan[disabled],
+fieldset[disabled] .btn-esports-fan,
+.btn-esports-fan.disabled:hover,
+.btn-esports-fan[disabled]:hover,
+fieldset[disabled] .btn-esports-fan:hover,
+.btn-esports-fan.disabled:focus,
+.btn-esports-fan[disabled]:focus,
+fieldset[disabled] .btn-esports-fan:focus,
+.btn-esports-fan.disabled:active,
+.btn-esports-fan[disabled]:active,
+fieldset[disabled] .btn-esports-fan:active,
+.btn-esports-fan.disabled.active,
+.btn-esports-fan[disabled].active,
+fieldset[disabled] .btn-esports-fan.active {
+  background-color: #F1C40F;
+  border-color: #F1C40F;
+}
+
+.btn-esports-fan .badge {
+  color: #F1C40F;
+  background-color: #FFFFFF;
+}
+
+/* ---------------------- */
+
+/* social wrapper */
+
+.social-icons-wrapper {
+    margin-top: 40px;
+    padding: 0;
+}
+
+.social-icons-wrapper ul {
+    margin: 0;
+    padding: 5px;
+}
+
+.social-icons-wrapper ul li {
+    margin: 5px;
+    list-style: none outside none;
+    display: inline-block;
+}
+
+.social-icons-wrapper i {
+    width: 40px;
+    height: 40px;
+    color: #FFF;
+    background-color: #909AA0;
+    font-size: 22px;
+    text-align:center;
+    padding-top: 12px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
+
+.social-icons-wrapper .fa-github {
+  background-color: #343434;
+}
+
+.social-icons-wrapper .fa-twitter {
+  background-color: #00ABE3;
+}
+
+.social-icons-wrapper .fa-linkedin {
+  background-color: #0094BC;
+}
+
+.social-icons-wrapper .fa-stack-overflow {
+  background-color: #FEA501;
+}
+
+.social-icons-wrapper i:hover {
+  color: #FFF;
+  text-decoration: none;
+  transition: all ease 0.3s;
+  -moz-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -ms-transition: all ease 0.3s;
+}
+
+.social-icons-wrapper .fa-facebook:hover { /* round facebook icon*/
+  background: #4060A5;
+}
+
+.social-icons-wrapper .fa-twitter:hover { /* round twitter icon*/
+  background: #006D91;
+}
+
+.social-icons-wrapper .fa-google-plus:hover { /* round google plus icon*/
+  background: #e64522;
+}
+
+.social-icons-wrapper .fa-github:hover { /* round github icon*/
+  background: #0D0D0D;
+}
+
+.social-icons-wrapper .fa-pinterest:hover { /* round pinterest icon*/
+  background: #cb2027;
+}
+
+.social-icons-wrapper .fa-linkedin:hover { /* round linkedin icon*/
+  background: #005066;
+}
+
+.social-icons-wrapper .fa-flickr:hover { /* round flickr icon*/
+  background: #FF57AE;
+}
+
+.social-icons-wrapper .fa-instagram:hover { /* round instagram icon*/
+  background: #375989;
+}
+
+.social-icons-wrapper .fa-vimeo-square:hover { /* round vimeo square icon*/
+  background: #83DAEB;
+}
+
+.social-icons-wrapper .fa-stack-overflow:hover { /* round stack overflow icon*/
+  background: #DB8F03;
+}
+
+.social-icons-wrapper .fa-dropbox:hover { /* round dropbox icon*/
+  background: #017FE5;
+}
+
+.social-icons-wrapper .fa-tumblr:hover { /* round tumblr icon*/
+  background: #3a5876;
+}
+
+.social-icons-wrapper .fa-dribbble:hover { /* round dribble icon*/
+  background: #F46899;
+}
+
+.social-icons-wrapper .fa-skype:hover { /* round skype icon*/
+  background: #00C6FF;
+}
+
+.social-icons-wrapper .fa-stack-exchange:hover { /* round stack exchange icon*/
+  background: #4D86C9;
+}
+
+.social-icons-wrapper .fa-youtube:hover { /* round youtube icon*/
+  background: #FF1F25;
+}
+
+.social-icons-wrapper .fa-xing:hover { /* round xing icon*/
+  background: #005C5E;
+}
+
+.social-icons-wrapper .fa-rss:hover { /* round rss icon*/
+  background: #e88845;
+}
+
+.social-icons-wrapper .fa-foursquare:hover { /* round foursquare icon*/
+  background: #09B9E0;
+}
+
+.social-icons-wrapper .fa-youtube-play:hover { /* round youtube play button icon*/
+  background: #DF192A;
+}
+
+
+/* --------------- */
+
+/* projects */
+
+.thumbnail {
+  padding: 15px;
+  border: none;
+  border-radius: 0;
+  min-height: 330px;
+  overflow: auto;
+}
+
+.thumbnail .title {
+  font-size: 20px;
+}
+
+.thumbnail .description {
+  min-height: 55px;
+}
+
+.thumbnail img {
+  width: 100%;
+  min-height: 100%;
+  margin-bottom: 10px;
+}
+
+.social-icons-wrapper.project {
+  margin: 0;
+}
+
+/* --------------- */
+
+/* now */
+
+#me {
+  height: 70%;
+  width: 70%;
+}
+
+/* ---- */
+
+/* tooltips */
+
+.btn-software-developer + .tooltip > .tooltip-inner {
+  background-color: #19B5FE;
+}
+.btn-software-developer + .tooltip > .tooltip-arrow {
+  border-top-color: #19B5FE;
+}
+
+/*.btn-esports-fan + .tooltip > .tooltip-inner {
+  background-color: #F1C40F;
+}
+.btn-esports-fan + .tooltip > .tooltip-arrow {
+  border-top-color: #F1C40F;
+}
+
+.btn-esports-fan + .tooltip.right > .tooltip-arrow {background-color: #F1C40F;}
+*/
+
+
+/* -------------- */
+
+/* Footer */
+
+footer {
+  padding-top: 5px !important;
+  border-top: 1px solid #BDC3C7;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+footer small {
+  float: left;
+}
+
+footer   a {
+  color: #333333;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #BDC3C7;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+/* --------- */
+
+/* Slide animation */
+
+.slideanim {visibility:hidden;}
+.slide {
+    /* The name of the animation */
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    /* The duration of the animation */
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    /* Make the element visible */
+    visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+/* -------------------- */

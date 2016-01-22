@@ -23,6 +23,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'acts-as-taggable-on', '~> 3.4'
+gem 'bootstrap-sass',       '3.2.0.0'
+gem "typedjs-rails", "~> 1.0.2"
 
 group :development, :test do
   gem 'byebug'

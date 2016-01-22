@@ -3,34 +3,24 @@
 
   <head>
     <title><%= full_title(yield(:title)) %></title>
+
+    <!--load font awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
+
   </head>
 
   <body>
-
-    <div id="sidebar">
-      <div id="logo">
-        <%= link_to "Matheus Manoel", root_path %>
-      </div>
-    </div>
-    
-    <ul>
-        <li class="category">Navigation</li>
-        <li><%= link_to "Blog", root_path %></li>
-        <li>About</li>
-    </ul>
-
-    <ul>
-      <li class="category">Social</li>
-      <li><a href="https://github.com/matheus-manoel">Github</a></li>
-      <li><a href="linkedin.com/in/matheusmanoel">Linkedin</a></li>
-      <li><a href="http://twitter.com/">Twitter</a></li>
-      <li>Email: matheuscmanoel@gmail.com</li>
-    </ul>
+    <%= render 'shared/header' %>
 
     <%= yield %>
 
   </body>
+
 </html>

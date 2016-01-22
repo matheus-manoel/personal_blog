@@ -14,3 +14,15 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require typed
+
+    $(function(){
+        $(".element").typed({
+            strings: ["<button type='button' class='btn btn-software-developer btn-lg sharp'>tech stuff.^2000</button>", 
+            '<button type="button" class="btn btn-esports-fan btn-lg sharp">eSports.^2000</button>'],
+            contentType: 'html',
+            loop: true,
+            typeSpeed: 0  
+        });
+    });
+
