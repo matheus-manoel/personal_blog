@@ -16,14 +16,14 @@ class PostsController < ApplicationController
     if @post.save
       redirect_to @post
     else
-      render 'new'
+      render :new
     end
   end
 
   private
 
     def post_params
-     params.require(:post).permit(:title, :body, :tag_list) 
+     params.require(:post).permit(:title, :subtitle, :body, :tag_list) 
     end
 
 end

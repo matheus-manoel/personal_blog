@@ -4,7 +4,7 @@ class PostsControllerTest < ActionController::TestCase
 
   def setup
     @post = posts(:exemplo)
-    @tag = ActsAsTaggableOn::Tag.find(1)
+    @tag  = ActsAsTaggableOn::Tag.find(1)
   end
 
   test "should get index" do
@@ -23,14 +23,10 @@ class PostsControllerTest < ActionController::TestCase
     get :show, id: @post.id
     assert_response :success
     assert_select "title", "MyString | matheus-manoel's Blog"
+    assert_select "h1[class=?]", "title"
+    assert_select "h3[class=?]", "subtitle"
+    assert_select "p[class=?]", "body"
     assert_select "p[class=?]", "tag_list"
-  end
-
-  test "should create post" do
-    assert_difference "Post.count" do
-      post :create, post: { body: @post.body, title: @post.title, tag_list: @tag.name }
-    end
-    assert_redirected_to post_path(id: assigns(:post))
   end
 
 end
