@@ -2,8 +2,12 @@
 
 <div class="container-fluid bg-gray ">
   <h1> New Post </h1>
+  
+  
 
   <%= form_for :post, url: posts_path do |f| %>
+    <%= render 'shared/error_messages' %>
+
     <p>
       <%= f.label :title %><br>
       <%= f.text_field :title %><br>
