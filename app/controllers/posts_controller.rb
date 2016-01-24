@@ -21,6 +21,20 @@ class PostsController < ApplicationController
     end
   end
 
+  def edit
+    @post = Post.find_by(id: params[:id])
+  end
+
+  def update
+    @post = Post.find_by(id: params[:id])
+  
+    if @post.update(params[:post].permit(:title, :body))
+      redirect_to @post
+    else
+      render 'edit'
+    end
+  end
+
   private
 
     def post_params
