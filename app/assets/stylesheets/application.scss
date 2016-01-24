@@ -32,8 +32,23 @@ a {
     }
 }
 
+input {
+  width: 500px;
+}
+
+textarea {
+  width: 800px;  
+  height: 400px;
+}
+
 .bg-gray {
   background-color: #ECF0F1;
+}
+
+.container-fluid {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 20px;  
 }
 
 .post-wrapper {
