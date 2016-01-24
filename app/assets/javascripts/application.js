@@ -26,3 +26,26 @@
         });
     });
 
+    $(document).ready(function() {
+     var navpos = $('#mainnav').offset();
+     console.log(navpos.top);
+       $(window).bind('scroll', function() {
+         if ($(window).scrollTop() > navpos.top - 1) {
+           $('#mainnav').addClass('navbar-fixed-top');
+          }
+          else {
+            $('#mainnav').removeClass('navbar-fixed-top');
+          }
+       });
+     });
+
+     $(window).scroll(function() {
+       $(".slideanim").each(function(){
+         var pos = $(this).offset().top;
+
+         var winTop = $(window).scrollTop();
+         if (pos < winTop + 600) {
+           $(this).addClass("slide");
+         }
+       });
+     });

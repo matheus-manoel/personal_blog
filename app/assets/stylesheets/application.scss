@@ -21,14 +21,31 @@
 body {
   font-family: 'Quicksand', sans-serif;
   font-size: 15px;
+  background-color: #ECF0F1;
+}
+
+a {
+    color: #333333;
+    &:hover {
+      color: #BDC3C7 !important;
+      text-decoration: none;
+    }
 }
 
 .bg-gray {
   background-color: #ECF0F1;
 }
 
-.container-fluid {
-  padding: 60px 70px;
+.post-wrapper {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-bottom: 20px;  
+  h3 {
+    margin-bottom: 10px;
+  }
+  p.body {
+    font-size: 16px;
+  }
 }
 
 .section-title {
@@ -42,8 +59,8 @@ body {
 }
 
 #about {
-  padding-top: 90px;
-  height: 150px;
+  padding-top: 45px;
+  height: 105px;
 }
 
 .jumbotron p {
@@ -621,3 +638,23 @@ footer ul li {
 }
 
 /* -------------------- */
+
+.post-wrapper h1, h2, h3, p {
+  margin: 0;
+}
+
+.post-title {
+  font-size: 30px;
+}
+
+.date {
+  font-size: 15px;
+}
+
+.glyphicon {
+  color: #333333;
+    &:hover {
+      color: #BDC3C7 !important;
+      text-decoration: none;
+    }
+}
