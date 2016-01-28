@@ -29,4 +29,12 @@ class PostsControllerTest < ActionController::TestCase
     assert_select "p[class=?]", "tag_list"
   end
 
+  test "should create post" do
+    assert_difference 'Post.count' do
+      post :create, post: { title: "t1", subtitle: "sub1", body: "body" }
+      assert_redirected_to post_path(assigns(:post))
+      assert_equal 'Post was successfully created.', flash[:success]
+    end
+  end
+
 end

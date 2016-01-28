@@ -16,6 +16,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
     if @post.save
       redirect_to @post
+      flash[:success] = "Post was successfully created."
     else
       render :new
     end
