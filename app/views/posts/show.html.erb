@@ -2,7 +2,7 @@
 
 <div class="container-fluid post-wrapper bg-gray">
   <h1 class="title">
-    <b><%= @post.title %></b>, <span class="date">submitted <%= time_ago_in_words(@post.created_at) %> ago.</span>
+    <b><%= @post.title %></b>, <span class="date">submitted <%= time_ago_in_words(@post.created_at) %> ago. <%= link_to " | edit", edit_post_path(@post) %> <%= link_to " | delete", post_path(@post), method: :delete, data: { confirm: "You sure?" } %></span>
   </h1>
 
   <h3 class="subtitle">
